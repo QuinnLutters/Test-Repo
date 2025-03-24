@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JS Modules -->
+    <script type="importmap">
+        {
+          "imports": {
+            "gsap": "https://cdn.skypack.dev/gsap"
+          }
+        }
+      </script>
+
+</head>
+<body>
+    <div class="demoBody">
+        <div id="sequence" class="timelineDemo">
+        
+        
+             <div class="box green" data-color="#0ae448" id="green"></div>
+            <div class="box purple" data-color="#9d95ff" id="purple"></div>
+            <div class="box orange" data-color="#ff8709" id="orange"></div>
+        
+        
+            <div class="timelineUI">
+              <div class="timelineUI-time" id="sequenceTime">0</div>
+              <div class="timelineUI-dragger-track">
+                <div class="timelineUI-dragger">
+                  <div></div>
+                </div>
+              </div>
+              <div class="markers">
+              </div>
+        
+              <div class="timleineUI-row">
+                <div class="timelineUI-tween green"></div>
+              </div>
+              <div class="timleineUI-row">
+                <div class="timelineUI-tween purple"></div>
+              </div>
+              <div class="timleineUI-row">
+                <div class="timelineUI-tween orange"></div>
+              </div>
+            </div>
+            <div class="controls">
+              <button class="timelineUI-button play">play</button>
+            </div>
+          </div>
+        </div>
+
+        <script src="main.js"></script>
+</body>
+</html>
