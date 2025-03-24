@@ -1,0 +1,25 @@
+body {
+    background-color: #2e3192;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo {
+    position: relative;
+}
+
+#q {
+    height: 400px;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+#dot {
+    position: absolute;
+    height: 50px;
+    top: 195px; /* tweak this to fit */
+    left: 400px; /* tweak this to fit */
+}
