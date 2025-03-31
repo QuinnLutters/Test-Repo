@@ -4,16 +4,28 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
+    margin: 0; /* Remove default margin */
 }
+
+/* .navbar {
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    width: 100%;
+    padding: 10px;
+    /* Optionally add a background color, box-shadow, etc. */
+/* } */
 
 .logo {
-    position: relative;
+    position: relative; /* This makes positioning within the logo work */
+    transform: scale(1); /* Use transform for scaling */
+    transform-origin: top left; /* Keep scaling anchored at the top left */
 }
 
+/* Positioning the SVG elements if needed */
 #q {
     height: 400px;
-    top: 0;
-    left: 0;
     display: block;
 }
 
